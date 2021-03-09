@@ -525,7 +525,7 @@ class Post {
 								</div>
 
 								<div class='newsfeedPostOptions'>
-									Comments($comments_check_num)&nbsp;&nbsp;&nbsp;
+									Comments($comments_check_num)'&nbsp;&nbsp;&nbsp'
 									<iframe src='like.php?post_id=$id' scrolling='no'></iframe>
 								</div>
 
@@ -534,6 +534,7 @@ class Post {
 								<iframe src='comment_frame.php?post_id=$id' id='comment_iframe' frameborder='0'></iframe>
 							</div>
 							<hr>";
+							echo htmlspecialchars_decode('&nbsp;&nbsp;&nbsp');
 
 				?>
 				<script>
